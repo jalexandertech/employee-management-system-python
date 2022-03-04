@@ -25,6 +25,7 @@ def addEmployeeInfo():
     global phone
     global email
     global salary
+    global employee_card
 
     for employee in range(5):
         counter += 1
@@ -53,7 +54,7 @@ def addEmployeeInfo():
             print("Please try again")
             continue
         print(f'''
-        --------------{name}------------
+        --------------{name}---------
         SSN: {employeeSSN}
         Phone: {phone}
         Email: {email}
@@ -117,34 +118,34 @@ def viewEmployeeInfo():
                 ''')
                 response = input("Please make a selection: ")
 
-                if response == "Name":
+                if response.capitalize() == "Name":
                     print()
                     print("Please enter name change of employee.")
 
                     updateInfo = input()
                     employees[0][0] = updateInfo
                     # Update SSN
-                elif response == "SSN":
+                elif response.upper() == "SSN":
                     print()
                     print("Please enter SSN of employee.")
 
                     updateInfo = input()
                     employees[0][1] = updateInfo
                     # update phone
-                elif response == "Phone":
+                elif response.capitalize() == "Phone":
                     print()
                     print("Please enter phone number of employee.")
 
                     updateInfo = input()
                     employees[0][2] = updateInfo
                     # update email
-                elif response == "Email":
+                elif response.capitalize() == "Email":
                     print()
                     print("Please enter email address of employee.")
 
                     updateInfo = input()
                     employees[0][3] = updateInfo
-                elif response == "Salary":
+                elif response.capitalize() == "Salary":
                     print()
                     print("Please enter salary of employee.")
 
@@ -161,7 +162,7 @@ def viewEmployeeInfo():
                 Salary: ${employees[1][4]}
             ''')
             updateEmployee = input("Type Y to update employee information: ")
-            if updateEmployee == "Y":
+            if updateEmployee.upper() == "Y":
                 print("\n"*10)
                 print(f'''Which of the following would you like to edit for this employee:
                     Name
@@ -175,34 +176,34 @@ def viewEmployeeInfo():
                 if searchSSN[2]:
                     response = input()
                     # Update name
-                    if response == "Name" or "name":
+                    if response.capitalize() == "Name":
                         print()
                         print("Please enter name change of employee.")
 
                         updateInfo = input()
                         employees[1][0] = updateInfo
                         # Update SSN
-                    elif response == "SSN" or "ssn":
+                    elif response.upper() == "SSN":
                         print()
                         print("Please enter SSN of employee.")
 
                         updateInfo = input()
                         employees[1][1] = updateInfo
                         # update phone
-                    elif response == "Phone" or "phone":
+                    elif response.capitalize() == "Phone":
                         print()
                         print("Please enter phone number of employee.")
 
                         updateInfo = input()
                         employees[1][2] = updateInfo
                         # update email
-                    elif response == "Email" or "email":
+                    elif response.capitalize() == "Email":
                         print()
                         print("Please enter email address of employee.")
 
                         updateInfo = input()
                         employees[1][3] = updateInfo
-                    elif response == "Salary" or "salary":
+                    elif response.capitalize() == "Salary":
                         print()
                         print("Please enter salary of employee.")
 
@@ -218,7 +219,7 @@ def viewEmployeeInfo():
                 Salary: ${employees[2][4]}
             ''')
             updateEmployee = input("Type Y to update employee information: ")
-            if updateEmployee == "Y":
+            if updateEmployee.upper() == "Y":
                 print("\n"*10)
                 print(f'''Which of the following would you like to edit for this employee:
                     Name
@@ -232,35 +233,35 @@ def viewEmployeeInfo():
                 if searchSSN[3]:
                     response = input()
                     # Update name
-                    if response == "Name" or "name":
+                    if response.capitalize() == "Name":
                         print()
                         print("Please enter name change of employee.")
 
                         updateInfo = input()
                         employees[2][0] = updateInfo
                         # Update SSN
-                    elif response == "SSN" or "ssn":
+                    elif response.upper() == "SSN":
                         print()
                         print("Please enter SSN of employee.")
 
                         updateInfo = input()
                         employees[2][1] = updateInfo
                         # update phone
-                    elif response == "Phone" or "phone":
+                    elif response.capitalize() == "Phone":
                         print()
                         print("Please enter phone number of employee.")
 
                         updateInfo = input()
                         employees[2][2] = updateInfo
                         # update email
-                    elif response == "Email" or "email":
+                    elif response.capitalize() == "Email":
                         print()
                         print("Please enter email address of employee.")
 
                         updateInfo = input()
                         employees[2][3] = updateInfo
                         # update salary
-                    elif response == "Salary" or "salary":
+                    elif response.capitalize() == "Salary":
                         print()
                         print("Please enter salary of employee.")
 
@@ -276,7 +277,7 @@ def viewEmployeeInfo():
                 Salary: ${employees[3][4]}
             ''')
             updateEmployee = input("Type Y to update employee information: ")
-            if updateEmployee == "Y":
+            if updateEmployee.upper() == "Y":
                 print("\n"*10)
                 print(f'''Which of the following would you like to edit for this employee:
                     Name
@@ -290,35 +291,35 @@ def viewEmployeeInfo():
                 if searchSSN[4]:
                     response = input()
                     # Update name
-                    if response == "Name" or "name":
+                    if response.capitalize() == "Name":
                         print()
                         print("Please enter name change of employee.")
 
                         updateInfo = input()
                         employees[3][0] = updateInfo
                         # Update SSN
-                    elif response == "SSN" or "ssn":
+                    elif response.upper() == "SSN":
                         print()
                         print("Please enter SSN of employee.")
 
                         updateInfo = input()
                         employees[3][1] = updateInfo
                         # update phone
-                    elif response == "Phone" or "phone":
+                    elif response.capitalize() == "Phone":
                         print()
                         print("Please enter phone number of employee.")
 
                         updateInfo = input()
                         employees[3][2] = updateInfo
                         # update email
-                    elif response == "Email" or "email":
+                    elif response.capitalize() == "Email":
                         print()
                         print("Please enter email address of employee.")
 
                         updateInfo = input()
                         employees[3][3] = updateInfo
                         # update salary
-                    elif response == "Salary" or "salary":
+                    elif response.capitalize() == "Salary":
                         print()
                         print("Please enter salary of employee.")
 
@@ -334,7 +335,7 @@ def viewEmployeeInfo():
                 Salary: ${employees[4][4]}
             ''')
             updateEmployee = input("Type Y to update employee information: ")
-            if updateEmployee == "Y":
+            if updateEmployee.upper() == "Y":
                 print("\n"*10)
                 print(f'''Which of the following would you like to edit for this employee:
                     Name
@@ -348,35 +349,35 @@ def viewEmployeeInfo():
                 if searchSSN[5]:
                     response = input()
                     # Update name
-                    if response == "Name" or "name":
+                    if response.capitalize() == "Name":
                         print()
                         print("Please enter name change of employee.")
 
                         updateInfo = input()
                         employees[4][0] = updateInfo
                         # Update SSN
-                    elif response == "SSN" or "ssn":
+                    elif response.upper() == "SSN":
                         print()
                         print("Please enter SSN of employee.")
 
                         updateInfo = input()
                         employees[4][1] = updateInfo
                         # update phone
-                    elif response == "Phone" or "phone":
+                    elif response.capitalize() == "Phone":
                         print()
                         print("Please enter phone number of employee.")
 
                         updateInfo = input()
                         employees[4][2] = updateInfo
                         # update email
-                    elif response == "Email" or "email":
+                    elif response.capitalize() == "Email":
                         print()
                         print("Please enter email address of employee.")
 
                         updateInfo = input()
                         employees[4][3] = updateInfo
                         # update salary
-                    elif response == "Salary" or "salary":
+                    elif response.capitalize() == "Salary":
                         print()
                         print("Please enter salary of employee.")
 
@@ -392,15 +393,39 @@ def viewAllEmployees():
     global answer
     print("\n" * 2)
     print("Would you like to view all employees?")
-    answer = input("Yes/No: ")
+    answer = input("Y/N: ")
 
-    if answer == "Yes":
+    if answer.upper() == "Y":
         for i in range(len(employees)):
             print()
             print(", ".join(employees[i]))
             print()
-    elif answer == "No":
-        print("Thank you again!")
+    elif answer.upper() == "N":
+        print("Thank you!")
+        print()
+        print()
 
 
 viewAllEmployees()
+
+
+def employeeData():
+    saveInformation = input("Type Y to save each employees information: ")
+    if saveInformation.upper() == "Y":
+
+        with open("employees.txt", "a") as f:
+            for employee in employees:
+                f.write("%s\n" % employee)
+        with open("employees.txt", "r") as fs:
+            file1 = fs.read()
+
+    # Import data into file
+    importPrompt = input("Type Y to import a file: ")
+    if importPrompt.upper() == "Y":
+        fileName = input("Please enter the filename, with .txt: ")
+        with open(fileName, "a") as file2:
+            file2.write("\n")
+            file2.write(file1)
+
+
+employeeData()

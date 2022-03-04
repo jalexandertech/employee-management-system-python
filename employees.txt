@@ -1,0 +1,5 @@
+['Mike Smith', '123123123', '4801231234', 'mike@gmail.com', '8000']
+['Sarah Diaz', '520520520', '5051231234', 'sarah@gmail.com', '9000']
+['Kim Jackson', '400400400', '7061231324', 'kim@gmail.com', '7000']
+['Larry Bowie', '900900905', '6021231234', 'larry@gmail.com', '7500']
+['Courtney Taylor', '705705705', '6231111234', 'court@yahoo.com', '5000']
